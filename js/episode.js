@@ -247,6 +247,29 @@ async function getEpSlider(total) {
     document.getElementById("slider-main").style.display = "block";
     RefreshLazyLoader();
 
+
+    
+
+  // Add the "Back to Watch" button after setting up the episode slider
+const backButtonHtml = '<button id="backToWatchBtn">Back to Watch</button>';
+document.getElementById('yourContainerId').innerHTML += backButtonHtml;
+
+// Function to handle the "Back to Watch" button click
+function backToWatch() {
+    // Your code to handle back to watch functionality
+}
+
+// Add event listener to the "Back to Watch" button
+document.getElementById('backToWatchBtn').addEventListener('click', backToWatch);
+
+RefreshLazyLoader();
+
+
+
+
+
+
+    
     // Scroll to playing episode
     document.getElementById("main-section").style.display = "block";
     document
