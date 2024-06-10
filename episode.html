@@ -112,18 +112,30 @@
     <script src="https://kit.fontawesome.com/45cb819601.js" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQX4066ZV"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-BHQX4066ZV");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-BHQX4066ZV");
 
-        // Add the JavaScript for the Back to Watch button
-     //   document.getElementById("backToWatchButton").addEventListener("click", function() {
-           // window.history.go(-2);
-        });
-    </script>
+    // Define the autoDownload function to trigger download automatically
+    function autoDownload() {
+        showDownload(); // Show the download div
+        getDownloadLinks(animeId, episodeId); // Trigger the download
+    }
+
+    // Call the autoDownload function on page load
+    window.onload = function() {
+        autoDownload();
+    };
+
+    // Add the JavaScript for the Back to Watch button
+    // document.getElementById("backToWatchButton").addEventListener("click", function() {
+    // window.history.go(-2);
+    // });
+</script>
+
 </body>
 
 
