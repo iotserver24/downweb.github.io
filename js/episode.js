@@ -387,4 +387,3 @@ async function loadData() {
 }
 
 loadData();
-this is js
